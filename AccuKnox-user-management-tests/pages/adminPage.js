@@ -1,7 +1,7 @@
 const { expect } = require("@playwright/test");
 
-class AdminPage {   
-  constructor(page) {     
+class AdminPage {
+  constructor(page) {
     this.page = page;
 
     // Navigation
