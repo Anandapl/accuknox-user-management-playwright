@@ -13,7 +13,7 @@ export default defineConfig({
   use: {
     trace: 'on',
     headless: true,       
-    channel: 'chrome',    
+    channel: 'chrome',
   },
 
   projects: [
@@ -26,4 +26,3 @@ export default defineConfig({
     },
   ],
 });
-
