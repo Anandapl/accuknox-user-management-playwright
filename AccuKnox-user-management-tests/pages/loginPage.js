@@ -1,4 +1,3 @@
-// pages/loginPage.js
 class LoginPage {
   constructor(page) {
     this.page = page;
