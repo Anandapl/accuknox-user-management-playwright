@@ -71,6 +71,8 @@ To check the installed Playwright version:
 ```bash
 npx playwright --version
 ```
+The Playwright version used here is Version 1.57.0.
+
 ### Manual Test Cases
 A total of 10 manual test cases are included, covering:
 <ul>
