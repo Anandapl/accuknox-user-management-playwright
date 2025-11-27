@@ -5,7 +5,7 @@ class LoginPage {
     this.password = page.locator("input[name='password']");
     this.loginBtn = page.locator("button[type='submit']");
   }
-
+     
   async login(username, password) {
     await this.page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
     await this.page.waitForSelector("input[name='username']");
