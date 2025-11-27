@@ -9,7 +9,6 @@ class LoginPage {
   async login(username, password) {
     await this.page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
     await this.page.waitForSelector("input[name='username']");
-
     await this.username.fill(username);
     await this.password.fill(password);
     await this.loginBtn.click();
