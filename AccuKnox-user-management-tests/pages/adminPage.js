@@ -1,6 +1,6 @@
 const { expect } = require("@playwright/test");
 
-class AdminPage {
+class AdminPage {   
   constructor(page) {
     this.page = page;
 
