@@ -1,4 +1,3 @@
-// pages/adminPage.js
 const { expect } = require("@playwright/test");
 
 class AdminPage {
@@ -81,9 +80,7 @@ class AdminPage {
     return this.page.locator(`.oxd-table-cell:has-text("${username}")`).isVisible();
   }
 
-  // -------------------------------------------------------
-  //  EDIT USER (missing earlier)
-  // -------------------------------------------------------
+
   async openUserForEdit(username) {
     await this.searchUser(username);
 
@@ -111,9 +108,6 @@ class AdminPage {
     await expect(this.tableBody).toBeVisible();
   }
 
-  // -------------------------------------------------------
-  // DELETE USER (missing earlier)
-  // -------------------------------------------------------
   async deleteUser(username) {
     await this.searchUser(username);
 
