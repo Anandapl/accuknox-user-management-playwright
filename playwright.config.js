@@ -12,17 +12,18 @@ export default defineConfig({
 
   use: {
     trace: 'on',
-    headless: false,
-    channel: 'chrome',   // ✅ USE SYSTEM CHROME
+    headless: true,       
+    channel: 'chrome',    
   },
 
   projects: [
     {
       name: 'chrome',
       use: {
-        channel: 'chrome',   // ✅ SYSTEM CHROME
-        headless: false,
+        channel: 'chrome',
+        headless: true,    
       },
     },
   ],
 });
+
