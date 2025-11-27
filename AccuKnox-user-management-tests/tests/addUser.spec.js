@@ -2,7 +2,7 @@
 
 const { test, expect } = require("@playwright/test");
 const { LoginPage } = require("../pages/loginPage");
-const { AdminPage } = require("../pages/adminPage");
+const { AdminPage } = require("../pages/adminPage"); 
 
 let username = "";
 const password = "Password123!";
