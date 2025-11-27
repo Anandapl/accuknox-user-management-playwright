@@ -1,9 +1,36 @@
+// // tests/addUser.spec.js
+// const { test, expect } = require("@playwright/test");
+// const { LoginPage } = require("../pages/loginPage");
+// const { AdminPage } = require("../pages/adminPage");
+
+// test("Add new user in OrangeHRM (NEW UI)", async ({ page }) => {
+
+//   const login = new LoginPage(page);
+//   const admin = new AdminPage(page);
+
+//   // Step 1 — Login
+//   await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+//   await login.login("Admin", "admin123");
+
+//   // Step 2 — Open Admin module
+//   await admin.openAdminModule();
+
+//   // Step 3 — Generate unique username
+//   const randomUser = "user" + Math.floor(Math.random() * 100000);
+
+//   // Step 4 — Add user
+//   await admin.addUser(randomUser, "Password123!", "Admin", "Enabled");
+
+//   // Step 5 — Validate user is created
+//   const isPresent = await admin.isUserPresent(randomUser);
+//   expect(isPresent).toBeTruthy();
+// });
 
 const { test, expect } = require("@playwright/test");
 const { LoginPage } = require("../pages/loginPage");
-const { AdminPage } = require("../pages/adminPage");    
+const { AdminPage } = require("../pages/adminPage");
 
-let username = "";  
+let username = "";
 const password = "Password123!";
 
 test.describe("User Management Automation", () => {
